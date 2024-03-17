@@ -1,0 +1,67 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+*.egg-info/
+.dist-info/
+build/
+dist/
+eggs/
+parts/
+sdist/
+var/
+wheels/
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment files
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Docker related
+**/Dockerfile
+.dockerignore
+docker-compose*.yml
+
+# IDE-specific files (e.g., PyCharm, VSCode)
+.idea/
+.vscode/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Langchain and Ollama files
+# Add specific patterns here if you have files to ignore
+
+# MQTT related
+# Add specific patterns here if you have files to ignore
+
+# FastAPI static files
+/static/
+/media/

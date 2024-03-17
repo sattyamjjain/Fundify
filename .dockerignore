@@ -1,0 +1,29 @@
+# General
+.git
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yml
+README.md
+.idea
+*.pyc
+__pycache__
+*.pyo
+*.pyd
+
+# Project-specific (adjust if needed)
+logs/
+mqtt-data/
+mqtt-log/
+mqtt-config/
+content/
+*.csv
+*.log
+
+# Python
+env/
+venv/
+*.egg-info
+dist/
+build/
+pip-log.txt

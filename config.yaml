@@ -1,0 +1,12 @@
+mqtt:
+  broker_address: localhost
+  port: 1883
+  topic: statement/analyzer
+
+ollama:
+  model_name: llama2
+
+store:
+  statements_folder_path: content/statements
+  categorize_transactions_folder_path: content/categorize_transactions
+  analyzed_statements_folder_path: content/analyzed_statements

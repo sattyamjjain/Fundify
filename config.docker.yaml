@@ -1,0 +1,8 @@
+mqtt:
+  broker_address: mqtt-broker
+  port: 1883
+  topic: statement/analyzer
+
+ollama:
+  model_name: llama2
+  base_url: http://ollama:11434

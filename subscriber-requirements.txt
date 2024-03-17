@@ -1,0 +1,7 @@
+langchain
+langchain-community
+pandas
+uvicorn
+PyYAML
+paho-mqtt
+python-dotenv

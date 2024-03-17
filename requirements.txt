@@ -1,0 +1,9 @@
+pandas
+pydantic
+fastapi
+uvicorn
+python-multipart
+aiofiles
+PyYAML
+paho-mqtt
+python-dotenv

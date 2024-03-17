@@ -1,0 +1,46 @@
+version: '3.9'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:80"
+    depends_on:
+      - mqtt-broker
+
+  mqtt-subscriber:
+    build:
+      context: .
+      dockerfile: subscriber.Dockerfile
+    depends_on:
+      - mqtt-broker
+      - ollama
+
+  mqtt-broker:
+    image: eclipse-mosquitto
+    ports:
+      - "1884:1883"
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
+
+  ollama:
+    volumes:
+      - ./ollama/ollama:/root/.ollama
+    container_name: ollama
+    pull_policy: always
+    tty: true
+    restart: unless-stopped
+    image: ollama/ollama:latest
+    ports:
+      - 11435:11434
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
+
+networks:
+  default:
+    driver: bridge
