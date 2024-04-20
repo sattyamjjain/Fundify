@@ -2,12 +2,23 @@
 # Fundify: Bank Statement Analysis Tool
 
 ## Overview
-Fundify offers a comprehensive solution for processing and analyzing bank statements. It combines Python and FastAPI with MQTT messaging for a scalable and efficient financial analysis tool.
+
+Fundify is a state-of-the-art tool designed for processing and analyzing bank statements efficiently. Utilizing a combination of Python and FastAPI, integrated with MQTT messaging, it ensures scalable and reliable financial analysis.
+
+## Compatibility
+
+Tested and verified on multiple platforms to ensure robust performance across diverse environments:
+
+- **llama2**
+- **gemma**
+- **llama3**
+- Additional platforms as required
 
 ## Getting Started
 
 ### Prerequisites
-Ensure these are installed:
+
+Before installation, ensure the following are installed:
 - Docker
 - Docker Compose
 
@@ -71,4 +82,11 @@ docker-compose down
 ```
 
 ## Contributing
-Your contributions are welcome! Please refer to our Contribution Guidelines.
+
+Encourage contributions by guiding users on how to contribute. For example:
+
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a pull request.
